@@ -13,3 +13,10 @@ def masodikFeladat():
         if szam % 3 == 0:
             szamlalo+1
     print(f"A számok között {szamlalo} darab 3-mal osztható szám van!")
+
+def harmadikFeladat(text, N):
+    if len(text) < N:
+        print("Nincs N. karakter!")
+    else:
+        karakter = text[N-1].upper()
+        print(f"A szöveg {N}-a/o/edik karaktere: {karakter * 3}")
