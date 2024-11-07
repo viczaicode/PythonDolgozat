@@ -1,7 +1,7 @@
 import feladatok
 
-#print("Első Feladat")
-#feladatok.elsoFeladat()
+print("Első Feladat")
+feladatok.elsoFeladat()
 print("Második Feladat")
 feladatok.masodikFeladat()
 print("Harmadik Feladat")

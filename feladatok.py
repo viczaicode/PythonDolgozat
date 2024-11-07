@@ -30,8 +30,7 @@ def negyedikFeladat():
         if stoppolo != "@":
             nevek.append(stoppolo)
             szamlalo += 1
-    print(f"A felhasználó {szamlalo} nevet adott meg") #Nem allitja le a ciklust nemtudom miert, 
-    #pedig 5x átnéztem és ujra is irtam ennek a metodsnak a mukodeset
+    print(f"A felhasználó {szamlalo} nevet adott meg")
 
 def otodikFeladatBekeres():
     felhasznalo_tippje = ""
