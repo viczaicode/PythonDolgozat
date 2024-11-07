@@ -4,14 +4,6 @@
 
 Ez a Python program öt különböző feladatot tartalmaz, amelyek a felhasználó interakcióját igénylik. A feladatok különböző logikai és matematikai problémákat oldanak meg, valamint szórakoztató elemeket is tartalmaznak, mint például a "Kő, papír, olló" játékot.
 
----
-
-## Tartalomjegyzék
-
-1. [Feladatok bemutatása](#feladatok-bemutatása)
-2. [License](#license)
-
----
 
 ## Feladatok bemutatása
 
@@ -33,9 +25,3 @@ A klasszikus "Kő, papír, olló" játékot implementálja a program. A felhaszn
 ---
 
 ![Kép leírása](kepek/kep.png)
-
-
-
-## License
-
-Ez a program szabadon felhasználható és módosítható. Az eredeti szerzőhöz való hivatkozás nem szükséges. Ha szeretnél hozzájárulni a fejlesztéshez, kérlek, készíts pull requestet a GitHub repóban!
