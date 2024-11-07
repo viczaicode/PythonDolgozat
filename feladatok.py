@@ -8,7 +8,7 @@ def elsoFeladat():
 
 def masodikFeladat():
     szamlalo = 0
-    for i in range(0,13,0):
+    for i in range(0,13,1):
         szam = random.randint(10,150)
         if szam % 3 == 0:
             szamlalo+1
@@ -26,10 +26,38 @@ def negyedikFeladat():
     szamlalo = 0
     stoppolo = ""
     while stoppolo != "@":
-        stoppolo = input("Kérlek adj meg egy nevet (vagy '@' a leállításhoz): ")
+        stoppolo = str(input("Kérlek adj meg egy nevet (vagy '@' a leállításhoz): "))
         if stoppolo != "@":
             nevek.append(stoppolo)
             szamlalo += 1
     print(f"A felhasználó {szamlalo} nevet adott meg") #Nem allitja le a ciklust nemtudom miert, 
     #pedig 5x átnéztem és ujra is irtam ennek a metodsnak a mukodeset
 
+def otodikFeladatBekeres():
+    felhasznalo_tippje = ""
+    while not (felhasznalo_tippje == "kő" or felhasznalo_tippje == "papír" or felhasznalo_tippje == "olló"):
+        felhasznalo_tippje = str(input("Kérlek válassz, kő/papír/olló: "))
+    felhasznalo_tippje.lower()
+    return felhasznalo_tippje
+
+def otodikFeladatGepGeneral():
+    gep_tippje = random.randint(1,3)
+    if(gep_tippje == 1):
+        return "kő"
+    elif(gep_tippje == 2):
+        return "papír"
+    else:
+        return "olló"
+
+def otodikFeladatDontes(felhasznalo_tippje:str, gep_tippje:str):
+    if felhasznalo_tippje == gep_tippje:
+        return "Döntetlen"
+    elif (felhasznalo_tippje == "olló" and gep_tippje == "kő"):
+        return "A gép győzött"
+    elif (felhasznalo_tippje == "papír" and gep_tippje == "olló"):
+        return "A gép győzött"
+    else:
+        return "Az felhasználó győzött"
+    
+def otodikFeladatKiiras(megoldas):
+    print(megoldas)
