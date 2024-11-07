@@ -23,9 +23,13 @@ def harmadikFeladat(text, N):
  
 def negyedikFeladat():
     nevek = []
-    szamlalo = 1
+    szamlalo = 0
     stoppolo = ""
-    while not(stoppolo == "@"):
-        nevek += str(input("Kérlek adj meg egy nevet: "))
-        szamlalo+1
-    print(f"A felhasználó {szamlalo} nevet adott meg")
+    while stoppolo != "@":
+        stoppolo = input("Kérlek adj meg egy nevet (vagy '@' a leállításhoz): ")
+        if stoppolo != "@":
+            nevek.append(stoppolo)
+            szamlalo += 1
+    print(f"A felhasználó {szamlalo} nevet adott meg") #Nem allitja le a ciklust nemtudom miert, 
+    #pedig 5x átnéztem és ujra is irtam ennek a metodsnak a mukodeset
+
