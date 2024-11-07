@@ -20,3 +20,12 @@ def harmadikFeladat(text, N):
     else:
         karakter = text[N-1].upper()
         print(f"A szöveg {N}-a/o/edik karaktere: {karakter * 3}")
+ 
+def negyedikFeladat():
+    nevek = []
+    szamlalo = 1
+    stoppolo = ""
+    while not(stoppolo == "@"):
+        nevek += str(input("Kérlek adj meg egy nevet: "))
+        szamlalo+1
+    print(f"A felhasználó {szamlalo} nevet adott meg")
