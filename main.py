@@ -1,3 +1,4 @@
 import feladatok
 
-feladatok.bekeres()
+feladatok.elsoFeladat()
+feladatok.masodikFeladat()
