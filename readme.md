@@ -32,6 +32,9 @@ A klasszikus "Kő, papír, olló" játékot implementálja a program. A felhaszn
 
 ---
 
+![Kép leírása](kepek/kep.png)
+
+
 
 ## License
 
